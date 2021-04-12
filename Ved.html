@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script>
+function printAsscii(event){
+var x = event.keyCode;
+document.getElementById("result").innerHTML = "The ASCI value is: " + x;
+}	
+</script>
+</head>
+<body>
+<div style="border:1px solid #0256;width:230px;margin:0 auto;margin-top:50px;padding:50px;box-shadow: 5px 10px 5px #888888">
+<h2 style="margin-top:0px;">Character Conversion </h2>
+<p> Return asci code of the  character entered by user.</p>
+<form>
+<input style="height: 39px;
+padding: 5px;
+border: 1px solid #cccc;
+width: 226px;" type="text" id="input_field" onkeypress="printAsscii(event)" placeholder="Enter Any Character"  />
+<br />
+<br />
+<label><b>Result</b></label>
+<br />
+<div id="result" style="padding:10px;border: 1px solid #ccc;width: 205px;height: 50px;margin-top: 10px;"></div>
+</form>
+</div>
+</body>
+</html>
